@@ -56,3 +56,15 @@ The first couple reasons contradict the fact that _a shot was fired_, but they'r
 > - What was annoying or difficult?
 > - What surprised you?
 > - Did TDD help you write some tests you wouldn’t otherwise have thought of?
+
+Writing the simplest solution to pass the test first, in a lot of cases seems entirely redundant.
+There's almost no value in having a function that simply returns `-40` in all cases, so why write that to begin with?
+
+The idea is good, though, in that it forces you to write more tests for more cases to cause your function to fail.
+
+Generally, TDD is useful in that it forces you to write expected outcomes to the code. Like writing a contract for the code to fulfill.
+As you think of more cases to handle, the function becomes more robust.
+
+However, if the function is just a mathematical formula and doesn't contain any logic, like a temperature converter, it seems less useful to write more test cases for it.
+If it works for one number, it'll work for any number if the formula is correct. It's not going to expand the feature set of the function.
+If logic dictates that negative values are invalid, that's a different story and should be tested.
