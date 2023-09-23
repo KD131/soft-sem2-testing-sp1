@@ -1,9 +1,8 @@
 package org.example;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RomanNumeralConverterTest {
     public static RomanNumeralConverter converter = new RomanNumeralConverter();
@@ -114,5 +113,23 @@ class RomanNumeralConverterTest {
     void convert14AtoR() {
         int arabic = 14;
         assertEquals("XIV", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert66AtoR() {
+        int arabic = 66;
+        assertEquals("LXVI", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert99AtoR() {
+        int arabic = 99;
+        assertEquals("XCIX", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert44AtoR() {
+        int arabic = 44;
+        assertEquals("XLIV", converter.arabicToRoman(arabic));
     }
 }

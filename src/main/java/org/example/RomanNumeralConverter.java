@@ -15,12 +15,19 @@ public class RomanNumeralConverter {
             sb.append("C".repeat(number / 100));
             number %= 100;
         }
-        if (number >= 50) {
-            sb.append("L");
-            number -= 50;
-        }
         if (number >= 10) {
-            sb.append("X".repeat(number / 10));
+            int tens = number / 10;
+            if (tens == 9) {
+                sb.append("XC");
+            } else if (tens >= 5) {
+                sb.append("L");
+                tens -= 5;
+                sb.append("X".repeat(tens));
+            } else if (tens == 4) {
+                sb.append("XL");
+            } else {
+                sb.append("X".repeat(tens));
+            }
             number %= 10;
         }
         if (number >= 1) {
