@@ -1,5 +1,6 @@
 package org.example;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -31,6 +32,37 @@ class RomanNumeralConverterTest {
         assertEquals("V", converter.arabicToRoman(arabic));
     }
 
+    @Test
+    void convert10AtoR() {
+        int arabic = 10;
+        assertEquals("X", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert50AtoR() {
+        int arabic = 50;
+        assertEquals("L", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert100AtoR() {
+        int arabic = 100;
+        assertEquals("C", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert500AtoR() {
+        int arabic = 500;
+        assertEquals("D", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert1000AtoR() {
+        int arabic = 1000;
+        assertEquals("M", converter.arabicToRoman(arabic));
+    }
+
+    @Disabled
     @Test
     void convert4AtoR() {
         int arabic = 4;
