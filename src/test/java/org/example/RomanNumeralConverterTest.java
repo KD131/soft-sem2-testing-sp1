@@ -132,4 +132,28 @@ class RomanNumeralConverterTest {
         int arabic = 44;
         assertEquals("XLIV", converter.arabicToRoman(arabic));
     }
+
+    @Test
+    void convert444AtoR() {
+        int arabic = 444;
+        assertEquals("CDXLIV", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert999AtoR() {
+        int arabic = 999;
+        assertEquals("CMXCIX", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert1999AtoR() {
+        int arabic = 1999;
+        assertEquals("MCMXCIX", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert3999AtoR() {
+        int arabic = 3999;
+        assertEquals("MMMCMXCIX", converter.arabicToRoman(arabic));
+    }
 }

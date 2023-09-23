@@ -7,12 +7,19 @@ public class RomanNumeralConverter {
             sb.append("M".repeat(number / 1000));
             number %= 1000;
         }
-        if (number >= 500) {
-            sb.append("D");
-            number -= 500;
-        }
         if (number >= 100) {
-            sb.append("C".repeat(number / 100));
+            int hundreds = number / 100;
+            if (hundreds == 9) {
+                sb.append("CM");
+            } else if (hundreds >= 5) {
+                sb.append("D");
+                hundreds -= 5;
+                sb.append("C".repeat(hundreds));
+            } else if (hundreds == 4) {
+                sb.append("CD");
+            } else {
+                sb.append("C".repeat(hundreds));
+            }
             number %= 100;
         }
         if (number >= 10) {
