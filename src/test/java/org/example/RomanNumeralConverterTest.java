@@ -86,10 +86,33 @@ class RomanNumeralConverterTest {
         assertEquals("M", converter.arabicToRoman(arabic));
     }
 
-    @Disabled
     @Test
     void convert4AtoR() {
         int arabic = 4;
         assertEquals("IV", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert9AtoR() {
+        int arabic = 9;
+        assertEquals("IX", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert7AtoR() {
+        int arabic = 7;
+        assertEquals("VII", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert8AtoR() {
+        int arabic = 8;
+        assertEquals("VIII", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert14AtoR() {
+        int arabic = 14;
+        assertEquals("XIV", converter.arabicToRoman(arabic));
     }
 }
