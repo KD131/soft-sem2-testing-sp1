@@ -24,4 +24,16 @@ class RomanNumeralConverterTest {
         int arabic = 3;
         assertEquals("III", converter.arabicToRoman(arabic));
     }
+
+    @Test
+    void convert5AtoR() {
+        int arabic = 5;
+        assertEquals("V", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert4AtoR() {
+        int arabic = 4;
+        assertEquals("IV", converter.arabicToRoman(arabic));
+    }
 }
