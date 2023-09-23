@@ -3,6 +3,7 @@ package org.example;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class RomanNumeralConverterTest {
     public static RomanNumeralConverter converter = new RomanNumeralConverter();
@@ -155,5 +156,24 @@ class RomanNumeralConverterTest {
     void convert3999AtoR() {
         int arabic = 3999;
         assertEquals("MMMCMXCIX", converter.arabicToRoman(arabic));
+    }
+
+    // negative tests
+    @Test
+    void convert0AtoR() {
+        int arabic = 0;
+        assertThrows(IllegalArgumentException.class, () -> converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convertNegative1AtoR() {
+        int arabic = -1;
+        assertThrows(IllegalArgumentException.class, () -> converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert4000AtoR() {
+        int arabic = 4000;
+        assertThrows(IllegalArgumentException.class, () -> converter.arabicToRoman(arabic));
     }
 }

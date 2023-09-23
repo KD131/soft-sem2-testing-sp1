@@ -1,7 +1,18 @@
 package org.example;
 
 public class RomanNumeralConverter {
+    /**
+     * Convert a number from Arabic to Roman numerals.
+     *
+     * @param number arabic number to convert as an int
+     * @return Roman numeral representation of number as a String
+     * @throws IllegalArgumentException if number is not between 1 and 3999
+     */
     public String arabicToRoman(int number) {
+        if (number < 1 || number > 3999) {
+            throw new IllegalArgumentException("Number must be between 1 and 3999");
+        }
+
         StringBuilder sb = new StringBuilder();
         if (number >= 1000) {
             sb.append("M".repeat(number / 1000));
