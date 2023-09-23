@@ -67,6 +67,9 @@ solution is not accepted.
 Use TDD to create a fahrenheit-to-celcius converter.  
 Use TDD to extend it to a celcius-to-fahrenheit converter.
 
+- [Code](/src/main/java/org/example/TemperatureConverter.java)
+- [Tests](/src/test/java/org/example/TemperatureConverterTest.java)
+
 ### 2.2. Roman Numeral Kata
 
 Implement an “Arabic numeral to roman numeral” converter using TDD. Follow the standard form of roman numerals – the rules can be found on the wikipedia page:  
