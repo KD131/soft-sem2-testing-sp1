@@ -39,6 +39,30 @@ class RomanNumeralConverterTest {
     }
 
     @Test
+    void convert20AtoR() {
+        int arabic = 20;
+        assertEquals("XX", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert22AtoR() {
+        int arabic = 22;
+        assertEquals("XXII", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert25AtoR() {
+        int arabic = 25;
+        assertEquals("XXV", converter.arabicToRoman(arabic));
+    }
+
+    @Test
+    void convert28AtoR() {
+        int arabic = 28;
+        assertEquals("XXVIII", converter.arabicToRoman(arabic));
+    }
+
+    @Test
     void convert50AtoR() {
         int arabic = 50;
         assertEquals("L", converter.arabicToRoman(arabic));
