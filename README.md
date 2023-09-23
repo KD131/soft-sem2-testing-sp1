@@ -76,10 +76,13 @@ Use TDD to extend it to a celsius-to-fahrenheit converter.
 
 Implement an “Arabic numeral to roman numeral” converter using TDD. Follow the standard form of roman numerals – the
 rules can be found on the wikipedia page:  
-https://en.wikipedia.org/wiki/Roman_numerals#Standard_form.
+https://en.wikipedia.org/wiki/Roman_numerals#Standard_form
 
 You can test your converter against this online converter:  
-http://www.novaroma.org/via_romana/numbers.html.
+http://www.novaroma.org/via_romana/numbers.html
+
+- [Code](/src/main/java/org/example/RomanNumeralConverter.java)
+- [Tests](/src/test/java/org/example/RomanNumeralConverterTest.java)
 
 ## 3. Give Your Thoughts On TDD
 
