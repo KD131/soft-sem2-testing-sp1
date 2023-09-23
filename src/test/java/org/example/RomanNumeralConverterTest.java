@@ -18,4 +18,10 @@ class RomanNumeralConverterTest {
         int arabic = 2;
         assertEquals("II", converter.arabicToRoman(arabic));
     }
+
+    @Test
+    void convert3AtoR() {
+        int arabic = 3;
+        assertEquals("III", converter.arabicToRoman(arabic));
+    }
 }
