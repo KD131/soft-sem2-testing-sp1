@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class MyStepdefs {
     private static RomanNumeralConverter converter;
-    private static int input;
     private static String output;
 
     @Given("I have started the converter")
@@ -20,8 +19,7 @@ public class MyStepdefs {
 
     @When("I convert {int}")
     public void iConvert(int arg0) {
-        input = arg0;
-        output = converter.arabicToRoman(input);
+        output = converter.arabicToRoman(arg0);
     }
 
     @Then("I should see {string}")
