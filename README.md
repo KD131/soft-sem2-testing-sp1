@@ -58,7 +58,7 @@ Complete the following two katas using TDD. Make sure to follow the TDD mantra,
 - Refactor: Make the necessary refactoring to the implementation and tests, in order to remove code redundancy
 
 A fuller explanation of the TDD steps can be found here:  
-https://en.wikipedia.org/wiki/Test-driven_development2
+https://en.wikipedia.org/wiki/Test-driven_development
 
 Remember, the point of these katas is not to solve the coding tasks as such. The point
 is to *use TDD*. Thus, if your code contains a solution to the task, but no tests, the
